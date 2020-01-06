@@ -1,0 +1,14 @@
+﻿@page "/"
+
+@inherits IndexBase
+
+@using ChartJs.Blazor.Charts
+@using ChartJs.Blazor.ChartJS.BarChart
+@using ChartJs.Blazor.ChartJS.Common.Properties
+@using ChartJs.Blazor.Util
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<ChartJs.Blazor.Charts.ChartJsBarChart @ref="_barChartJs" Config="@_config" Width="600" Height="300" />
